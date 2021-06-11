@@ -1,0 +1,43 @@
+Good Morning All....
+
+Let me wait for few more min so that others can join the session
+
+Day 2-web development using django[Jun-10]
+=============
+
+Today's Agenda..
+
+	1. OOPs- object oriented programming with python
+		- it makes maintenance and development easiar
+			- Class
+				* collection of objects
+				* collection objects and methods
+				* logic will implement based on attribes and methods
+				Ex: employee --> empname,empdes,empage
+				#Syntax of class
+				class Classname:
+					statemnts
+					.......
+	
+				self is reference variable
+				it can be any name
+				but it should be first parameter
+				by using self parameter we can access all the attributes 
+
+
+
+			- Object
+				* real world entity which has state and bhaviour
+				objectname = classname
+				
+			- Method
+				* method is a function
+				* by using this methon we can access all the attributes frm the class
+
+			- constructor
+				* constructor is a special type of method/function
+				* __init__() --> special variable to create constructor
+			- Inheritance
+				* this is imp concept in oops
+				* to access properties of one class another class
+				* we can access all the properties of parent class in child class
