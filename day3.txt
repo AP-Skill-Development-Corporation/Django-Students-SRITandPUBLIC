@@ -1,0 +1,55 @@
+Good Morning All....
+
+Web Development using Django..
+------------------------------
+Day 3[June-11]
+==============
+
+Today's Agenda..
+	1. Django Introduction,MVT architechture,installation
+	   Django introduction:
+		- we application frame work
+		- it will work based on MVT architechture
+		- by using this frame a developer can dev a application easily
+		- it takes less time
+		- django developed by  laurence journal
+
+		- first django version is 0.90
+		- 2.0 --> 2017
+	   MVT ---> (MOdel View Template)
+	   	Model ---> process the data (database)
+	   	view ----> views.py wil develop business logic		
+		templates --> it will handle html pages
+	  
+	   Django installation
+		- cmd
+		- python --version
+		- pip install django
+		- django-admin --version (for getting django version)
+
+	  Editors
+		subline / visual studio / pycharm
+		subline --> installation sublin
+
+	2. Project creation
+		step 1: project creation
+			* django-admin startproject projectname
+		
+		step 2: App creation(user app)
+			* python manage.py startapp appname
+		
+		step 3: we need to register that app in settings.py
+		
+		step 4: we need to run the server
+			* python manage.py runserver
+				- after running the server it will generate one ip
+					ex: 127.0.0.27
+					localhost:portnum(8000)
+
+
+	3. App creation(user app)
+	4. Use of admin App
+
+
+
+Django-Students-SRITandPUBLIC

@@ -1,0 +1,15 @@
+Good Morning All......
+
+Day-4[Jun-12]
+=============
+
+Today's Agenda...
+-----------------
+	1. App creation 
+		* python manage.py startapp appname
+	2. URL mapping 
+		* path('urlname',views.functionname)
+	3. Dynamic URL mapping
+		* path('urlname/<str:variablename>'
+
+

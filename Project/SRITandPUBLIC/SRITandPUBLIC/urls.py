@@ -15,8 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from App1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sample/',views.Sample),
+    path('sample1/',views.Sample1),
+    path('sample2/',views.Sample2),
+    path('mulple/',views.Mulple),
+
+    #dynamic url
+    path('stringvalue/<str:name>',views.StringValue),
+    path('intvalue/<int:num>',views.IntValue),
+
+    path('multi/<str:name1>/<int:age>')
     
 ]
