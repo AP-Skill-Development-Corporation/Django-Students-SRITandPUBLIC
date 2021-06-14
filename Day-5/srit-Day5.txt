@@ -1,0 +1,57 @@
+GoodMorning To All:
+-------------------
+
+Day Objectives:
+==============
+
+		- Dynamic Url Mapping
+path('urlname/'views.function name,name of the url)-static
+path('urlname/<int:variable>',views.function,optional)- dynamic
+              <str:variable>
+
+ex:localhost:8000/hi/string data
+   locahost:8000/hi/integerdata
+
+task:
+localhost:8000/hi/sireesha/660
+
+response:my name is srikanya and my roll number is 659
+		     sireesha                       660
+
+number table:
+
+localhost:8000/urlname/3
+
+
+
+- Django Templates
+-------------------
+- mvt-model view template
+
+templates:we can store .html files
+	- html
+	- css(cascading style sheets)
+	- bootstrap
+
+template creation:
+-------------------
+	1.myApp->rightclick->newfolder->templates->myApp
+
+	user request->urls->views-templates
+views-templates:
+	render(p1,p2,p3)
+	- render(request,'html file location',{})
+	- render(request,'myApp/.html',{})
+
+
+
+
+
+
+
+
+
+
+
+
+
