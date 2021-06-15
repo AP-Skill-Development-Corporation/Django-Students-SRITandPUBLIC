@@ -1,0 +1,47 @@
+Day Objectives:
+---------------
+	- Templates
+
+		render(3)-
+		{}-
+dtl(django template language)
+
+html tags:
+---------
+<input>
+<span>-style(same line)
+<table>
+<p>
+<link>
+<script>
+<img>
+<ol>
+<li>
+<form>
+<br>
+
+table-rows,columns            firstname lastname age
+
+			       nadini    chamarthi 33
+			       siri      tamada     23
+
+css-cascading style sheets(styling):
+
+types:
+=====
+	inline css    -styling-same line
+	internal css  -head-<style>-styling
+	external css   -(.css)
+
+task:
+table-2*1=2
+
+	localhost:8000/urlname/2
+
+	td=num*i=num*i td=2*2=4
+	data=[]-[2*1=2
+		 2*1=2,2*2=4
+		2*1=2,2*2=4,2*3=6
+				2*10=20]
+	data.append(td)
+
