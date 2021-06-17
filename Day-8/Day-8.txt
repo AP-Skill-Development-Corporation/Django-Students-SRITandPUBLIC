@@ -1,0 +1,37 @@
+GoodMorning To All:
+-------------------
+17-06-2021
+===========
+		- online bootstrap
+			- head-css-js(copy)
+			-div- class-style
+				-header
+				-body
+				-footer
+			
+			- task
+				-name
+				- email
+				-mobile num
+				- psw
+				-cpsw
+				-radio (f,m)
+				-dob
+				-checkboxes(t,e,h)
+				-file(choose a file)
+				
+		-offline bootstrap
+		
+request methods:
+	get:
+	post:
+	
+	user request->urls.py->views.py->templates
+	
+	templates-><form action="post">
+		{% csrf_token %}	
+	views->
+		if request.method=="post"
+			variable name=request.POST['html keys'](names)
+			variable name=request.get.POST('Html keys')
+	
