@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-body">
+				<h3 class="bg-success text-white text-center border rounded">Registered Data</h3>
+				<p>your name is:{{uname}}</p>
+				<p>your email is:{{email}}</p>
+				<p>your number is:{{mob}}</p>
+				<p>your gender is:{{gender}}</p>
+				<p>your dob is:{{db}}</p>
+				<p>your language is:{{lan}}</p>
+				<p>your file is:{{fl}}</p>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

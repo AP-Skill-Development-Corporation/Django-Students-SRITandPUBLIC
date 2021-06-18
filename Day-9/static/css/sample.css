@@ -1,0 +1,24 @@
+form{
+	background-color: lightseagreen;
+	padding:30px;
+	margin-left: 30%;
+	margin-right: 30%;
+	border-radius: 30px;
+}
+h2{
+	text-align: center;
+	color:blue;
+}
+button{
+	background-color: green;
+	color: red;
+	padding:10px 10px;
+	margin: 8px;
+	width:20%;
+}
+input[type=text],input[type=number],input[type=password]{
+	width:50%;
+	padding:3%;
+	margin: 5px 0 22px 0
+	background: #f1f1f1;
+}
