@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  	<script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
+</head>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#">Forms App</a>
+		<!-- Links -->
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Home</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="{% url 'register' %}">Register</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="{% url 'details' %}">Details</a>
+		    </li>
+		  </ul>
+	</nav>
+	<div class="container mt-5">
+		<h2 class="alert alert-primary text-center">Details Data</h2>
+		<a href="{% url 'register' %}" class="btn btn-primary btn-md float-md-right">Register</a>
+		<table class="table table-bordered table-hover table-stripped bg-light">
+			<thead>
+				<tr class="bg-info">
+					<th>S.No</th>
+					<th>Name</th>
+					<th>Mobile</th>
+					<th>Age</th>
+					<th>Gender</th>
+					<th>Branch</th>
+					<th colspan="2">Operations</th>
+				</tr>
+				<tbody>
+					{% for i in data %}
+					<tr>
+						<td>{{i.id}}</td>
+						<td>{{i.name}}</td>
+						<td>{{i.mobile_no}}</td>
+						<td>{{i.age}}</td>
+						<td>{{i.gender}}</td>
+						<td>{{i.branch}}</td>
+						<td><a href="#" class="btn btn-outline-success">Update</a></td>
+						<td><a href="#" class="btn btn-outline-danger">Delete</a></td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</thead>
+			
+		</table>
+	</div>
+
+</body>
+</html>
