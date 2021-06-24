@@ -1,0 +1,22 @@
+Good Morning All....
+
+Day12[June'22]
+
+Today's Agenda..
+================
+
+CRUD operations with Html conti....
+	1. insert
+		classname.objects.create(fieldname = value)
+	2. reading the data from table/database
+		classname.objects.all()
+	3. Update
+		
+		#urls
+		path('urlname/<int:id>/',)
+		
+
+		rec = classname.objects.get(id=number)
+		rec.fieldname = newvalue
+		rec.fieldname = newvalue
+

@@ -1,0 +1,71 @@
+Good Morning All...
+
+Day11[June'21]
+
+Today's Agenda..
+	* ORM(Object Relational Mapping) Queries.....
+	1. insert - for inserting values into table
+		- save()
+			* temp = classname(fieldname=value)
+			  temp.save()
+
+		- create()
+			* classname.objects.create(fieldname=value)
+			
+	2. Retrieve
+		- getting all the data from the table
+		in sql ==> select * from tablename
+		ORM ==> classname.objects.all()
+			- for printing all the values in dictionary format
+				classname.objects.values()
+			- for list format
+				classname.objects.values_list()
+			- for getting single record from the table
+				classname.objects.get(id=number(id))	
+	3. Update
+		- To update the record in table
+		- first we need to get the record from the table and then store 		  that record in seperate variable
+		 	* rec = classname.objects.get(id=number)
+			  - rec.Fieldname = value
+			  rec.Sname = "newvalue"
+			  rec.Smobile = "newmobile"
+			* rec.save()
+	4. Delete
+		- to delete a record from the table
+		- first we need to get the record from the table and then store 		          that record in seperate variable
+			* del_rec = Student.objects.get(id=number)
+				
+				- del_rec.delete()
+				- del_rec.save()
+
+
+## CRUD operations with python shell	
+For python shell--> python manage.py shell
+		step 2: we need to import the table in shell
+			from Appname.models import classname
+
+
+## CRUD operation with Html pages
+
+	1. insert ---> inserting values in table
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
