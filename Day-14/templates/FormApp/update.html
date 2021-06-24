@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css'%}">
+  	<script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!-- Brand/logo -->
+		<a class="navbar-brand" href="#">Forms App</a>
+		<!-- Links -->
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Home</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="{% url 'register' %}">Register</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="{% url 'details' %}">Details</a>
+		    </li>
+		  </ul>
+	</nav>
+
+<div class="container">
+	<div class="card col-md-5 mx-auto">
+		<h2 class="bg-primary text-whit text-center border-ronded p-2 m-2">Update Page</h2>
+		<form method="POST">
+			{% csrf_token %}
+			<table class="table table-bordered">
+				{% for i in u %}
+				<tr>
+					<td>{{i}}</td>
+				</tr>
+
+				{% endfor %}
+			</table>
+			<input type="submit" name="submit" value="Upate" class="btn btn-outline-primary">
+		</form>
+		
+	</div>
+	
+</div>
+</body>
+</html>
