@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container col-md-6 mt-5">
+		<div class="alet alert-success">
+			<strong><h2 class="p-2">Do you want to delete this {{ del_rec.Sname }} record</h2></strong>
+			
+		</div>
+		<form method="POST">
+			{% csrf_token %}
+			<div class="form-group">
+				<input type="submit" value="Delete" name="submit" class="btn btn-outline-danger">
+				<a href="{% url 'Details' %}" class="btn btn-outline-warning">Cancel</a>
+			</div>
+			
+		</form>
+		
+	</div>
+
+</body>
+</html>

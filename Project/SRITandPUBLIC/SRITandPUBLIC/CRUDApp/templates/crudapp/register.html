@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container col-md-7 mt-5">
+		<div class="card">
+			<form method="POST">
+				{% csrf_token %}
+			<div class="card-header bg-info text-center text-white"><h3>Registration page<h3></div>
+			<div class="card-body">
+				<div class="form-group">
+					<label>Student Name</label>
+					<input type="text" name="sname" placeholder="Enter Studen Name" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label>Student Roll</label>
+					<input type="text" name="sroll" placeholder="Enter Studen Rollno" class="form-control" required>
+				</div>
+
+				<div class="form-group">
+					<label>Student Branch</label>
+					<input type="text" name="sbranch" placeholder="Enter Studen Branch" class="form-control" required>
+				</div>
+
+
+				<div class="form-group">
+					<label>Student Email</label>
+					<input type="email" name="semail" placeholder="Enter Studen Email" class="form-control" required>
+				</div>
+
+				<div class="form-group">
+					<label>Student Mobile</label>
+					<input type="number" name="smobile" placeholder="Enter Studen Mobile" class="form-control" required>
+				</div>
+				
+			</div>
+			<div class="card-footer">
+				<input type="submit" name="Register" value="Register" class="btn btn-info form-control">
+				
+			</div>	
+
+
+		</form>		
+		</div>
+
+		
+	</div>
+
+</body>
+</html>
