@@ -1,0 +1,20 @@
+{% extends 'dtlapp/base.html' %}
+
+{% block title %}login page{% endblock title %}
+
+{% block content %}
+
+<div class="card mt-4 col-md-6 mx-auto">
+    <h2 class="bg-info text-white text-center mx-2 my-2 p-2 border-rounded">Login Here...</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group mx-3">
+            <input type="text" name="username" class="form-control" placeholder="Enter Username">
+            <input type="password" name="password" class="form-control mt-2" placeholder="Enter password">
+            <input type="submit" value="Login" class="form-control btn btn-info btn-block mt-2">
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

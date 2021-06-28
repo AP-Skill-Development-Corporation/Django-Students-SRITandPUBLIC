@@ -1,0 +1,45 @@
+{% extends 'dtlapp/base.html' %}
+
+{% load static %}
+{% block title %} profile {% endblock title %}
+
+{% block content %}
+	<div class="container col-md-8 mt-5">
+		<div class="text-center bg-info text-white p-2"><h2>User Profile</h2></div>
+		<table class="table table-hover text-center bg-secondary text-white">
+			<tr>
+				<td>FirstName</td>
+				<td>{{ request.user.first_name }}</td>
+			</tr>
+			<tr>
+				<td>LastName</td>
+				<td>{{ request.user.last_name }}</td>
+			</tr>
+			<tr>
+				<td>UserName</td>
+				<td>{{ request.user.username }}</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>{{ request.user.email }}</td>
+			</tr>
+			<tr>
+				<td>LastLogin</td>
+				<td>{{ request.user.last_login }}</td>
+			</tr>
+			<tr>
+				<td>Date of Join</td>
+				<td>{{ request.user.date_joined }}</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="" value="cancel" class="btn btn-info float-left"></td>
+				<td><a href="{% url 'Update_user' %}" class="btn btn-info float-right">Update</a></td>
+
+			</tr>
+			
+		</table>
+		
+	</div>
+
+
+{% endblock content %}

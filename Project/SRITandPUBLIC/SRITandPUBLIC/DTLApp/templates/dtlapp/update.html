@@ -1,0 +1,28 @@
+{% extends 'dtlapp/base.html' %}
+
+{% load static %}
+{% block title %} profile {% endblock title %}
+
+{% block content %}
+	<div class="container col-md-7 mt-5">
+		<div class="text-center text-white bg-info p-1"><h2>Update your Profile...</h2></div>
+		<form method="POST">
+			{% csrf_token %}
+			<table class="table table-hover">
+				{% for i in data %}
+				<tr>
+					<td>{{ i }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+			<input type="submit" name="" value="cancel" class="btn btn-info float-left">
+			<input type="submit" name="" value="Update" class="btn btn-info float-right">
+
+				
+			
+		</form>
+		
+	</div>
+
+
+{% endblock content %}

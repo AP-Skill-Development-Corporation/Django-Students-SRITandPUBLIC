@@ -1,0 +1,45 @@
+{% extends 'dtlapp/base.html' %}
+{% load static %}
+
+{% block title %} register {% endblock title %}
+
+{% block content %}
+
+	<!-- <div class="container col-md-7 mt-5">
+		<div class="card">
+			<div class="card-header text-center bg-info text-white"><h3>Register Here...</h3></div>
+			<div class="card-body">
+				<form method="POST">
+					{% csrf_token %}
+					{{ form.as_p }}
+					
+				</form>
+			</div>
+			<div class="card-footer">
+				<input type="submit" name="" value="register" class="btn btn-info form-control">
+				
+			</div>
+		</div>
+		
+	</div> -->
+
+	<div class="container col-md-7 mt-5">
+		<div class="card-header text-center bg-info text-white">Register</div>
+
+		<form method="POST">
+			{% csrf_token %}
+			{{ form.as_p }}
+
+			<input type="submit" name="" value="register" class="btn btn-info form-control">
+			
+		</form>
+		
+	</div>
+
+
+
+
+
+
+
+{% endblock content %}
