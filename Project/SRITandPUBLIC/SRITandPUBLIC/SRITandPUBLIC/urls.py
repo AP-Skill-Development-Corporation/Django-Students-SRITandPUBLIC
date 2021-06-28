@@ -30,6 +30,7 @@ urlpatterns = [
     path('intvalue/<int:num>',views.IntValue),
     #path('multi/<str:name1>/<int:age>')
 
-    path('',include('CRUDApp.urls'))
+    path('',include('CRUDApp.urls')),
+    path('dtlapp/',include('DTLApp.urls'))
     
 ]
